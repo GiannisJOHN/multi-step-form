@@ -1,0 +1,78 @@
+.forms-container {
+    max-width: 450px;
+    width: 100%;
+}
+.plan-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.plan-card {
+    padding: 20px 16px;
+    height: 160px;
+    width: 138px;
+    border-radius: 8px;
+    border: solid 1px var(--color-border-color)
+}
+.plan-card-title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--color-denim);
+    margin-top: 39px;
+    margin-bottom: 7px;
+}
+
+.plan-card-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-grey);
+}
+
+.toggle-button-container {
+    font-weight: 700;
+    width: 100%;
+    max-width: 450px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-very-light-grey);
+    border-radius: 8px;
+    margin-top: 32px;
+}
+
+.toggle-button {
+    background-color: var(--color-denim);
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    width: 38px;
+    border-radius: 10px;
+    padding: 4px;
+    border: none;
+    margin: 0 24px;
+  }
+
+  .toggle-circle {
+    height: 12px;
+    width: 12px;
+    border-radius: 100%;
+    background-color: white;
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  }
+
+  .toggle-active {
+    font-weight: inherit;
+    color: var(--color-denim);
+  }
+
+  .toggle-inactive {
+    font-weight: inherit;
+    color: var(--color-grey);
+  }
+
+  .goRight {
+    transform: translateX(calc(38px - 8px - 12px));
+  }

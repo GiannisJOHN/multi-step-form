@@ -1,0 +1,27 @@
+.navigation-buttons-container {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.next-button {
+    height: 48px;
+    width: 123px;
+    border-radius: 8px;
+    background-color: var(--color-denim);
+    color: white;
+    align-self: flex-end;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button {
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    color: var(--color-grey);
+    cursor: pointer;
+}

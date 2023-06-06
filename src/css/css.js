@@ -1,0 +1,7 @@
+import './index.css'
+import './app.css'
+import './first-step.css'
+import './heading.css'
+import './sidebar.css'
+import './choose-plan.css'
+import './navigation-buttons.css'

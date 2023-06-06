@@ -1,0 +1,18 @@
+.heading-container {
+    margin-bottom: 40px;
+}
+
+.heading-title {
+    font-size: 32px;
+	font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 11px;
+    color: var(--color-denim);
+}
+
+.heading-subtitle {
+    font-size: 16px;
+	font-weight: 400;
+	line-height: 25px;
+    color: var(--color-grey);
+}
