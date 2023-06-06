@@ -16,8 +16,6 @@ function FirstStep(props) {
                     type="text"
                     id="name"
                     placeholder="e.g. Stephen King"
-                    value={''}
-                    onChange={''}
                     required
                     />
                 </div>
@@ -28,8 +26,6 @@ function FirstStep(props) {
                     type="email"
                     id="email"
                     placeholder="e.g. stephenking@lorem.com"
-                    value={''}
-                    onChange={''}
                     required
                     />
                 </div>
@@ -40,13 +36,11 @@ function FirstStep(props) {
                     type="tel"
                     id="phoneNumber"
                     placeholder="e.g. +1 234 567 890"
-                    value={''}
-                    onChange={''}
                     required
                     />
                 </div>
-            </form>
             <NavigationButtons />
+            </form>
         </div>
     )
 }

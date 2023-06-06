@@ -36,6 +36,12 @@
     margin-right: 16px;
 }
 
+.step-active {
+    background-color: var(--color-sky-blue);
+    border: none;
+    color: var(--color-denim)
+}
+
 @media (max-width: 850px) {
     .sidebar {
         width: 100%;

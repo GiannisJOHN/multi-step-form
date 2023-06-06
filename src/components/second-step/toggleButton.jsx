@@ -1,13 +1,29 @@
-import React from 'react';
+import React from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { updatePaymentMode } from '../../global-state/finalSlice';
 
-function ToggleButton(props) {
+function ToggleButton() {
+    
+    const paymentMode = useSelector((state) => state.final.payment.mode)
+
+    let toggleCircleClass = paymentMode === 'monthly' ? 'toggle-circle' : 'toggle-circle goRight'
+    let leftSpan = paymentMode === 'monthly' ? 'toggle-active' : 'toggle-inactive'
+    let rightSpan = paymentMode === 'yearly' ? 'toggle-active' : 'toggle-inactive'
+    
+    let dispatch = useDispatch()
+
+    function onToggleButtonClick() {
+        let mode = paymentMode === 'monthly' ? 'yearly' : 'monthly'
+        dispatch(updatePaymentMode(mode))
+    }
+
     return (
         <div className='toggle-button-container'>
-            <span className='text-style-body-medium toggle-active'>Monthly</span>
-            <button className='toggle-button'>
-                <div className="toggle-circle" />
+            <span className={`text-style-body-medium ${leftSpan}`}>Monthly</span>
+            <button className='toggle-button' onClick={onToggleButtonClick}>
+                <div className={toggleCircleClass} />
             </button>
-            <span className='text-style-body-medium toggle-inactive'>Yearly</span>
+            <span className={`text-style-body-medium ${rightSpan}`}>Yearly</span>
         </div>
     )
 }

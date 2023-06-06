@@ -11,14 +11,29 @@
     height: 160px;
     width: 138px;
     border-radius: 8px;
-    border: solid 1px var(--color-border-color)
+    border: solid 1px var(--color-border-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25%;
+    flex-direction: column;
 }
+
+.plan-card-selected {
+    background-color: var(--color-very-light-grey);
+    border-color: var(--color-purple);
+}
+
+.plan-card:hover {
+    border-color: var(--color-purple);
+}
+
 .plan-card-title {
     font-weight: 700;
     font-size: 16px;
     line-height: 18px;
     color: var(--color-denim);
-    margin-top: 39px;
     margin-bottom: 7px;
 }
 
@@ -27,6 +42,10 @@
     font-size: 14px;
     line-height: 16px;
     color: var(--color-grey);
+}
+
+.second-subtitle {
+    color: var(--color-denim);
 }
 
 .toggle-button-container {
@@ -62,15 +81,19 @@
     transition: 0.5s;
     transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
-
+  
   .toggle-active {
     font-weight: inherit;
     color: var(--color-denim);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
-
+  
   .toggle-inactive {
     font-weight: inherit;
     color: var(--color-grey);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 
   .goRight {

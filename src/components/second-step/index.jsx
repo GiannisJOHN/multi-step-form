@@ -5,12 +5,9 @@ import Card from './card'
 import ToggleButton from './toggleButton'
 import NavigationButtons from '../navigation-buttons/navigationButtons'
 
-function renderCards(array, option) {
+function renderCards(array) {
     return array.map((each) => {
-        let price = option === 'monthly' ? '$' + each.pricingMonthly + '/mo' : '$' + each.pricingYearly + 'yr'
-        let info = option === 'monthly' ? '' : each.yearlyInfo 
-
-        return <Card name={each.name} pricing={price} yearlyInfo={info} img={each.img} />
+        return <Card name={each.name} pricing={each.price} img={each.img} />
     })
 }
 

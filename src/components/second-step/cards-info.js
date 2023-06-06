@@ -6,22 +6,26 @@ export const cardInfo = [
     {
         name: 'Arcade',
         img: arcadeImage,
-        pricingMonthly: 9,
-        pricingYearly: 90,
+        price: {
+            pricingMonthly: 9,
+            pricingYearly: 90
+        },
         yearlyInfo: '2 months free'
-    },
-    {
+    }, {
         name: 'Advanced',
         img: advancedImage,
-        pricingMonthly: 12,
-        pricingYearly: 120,
+        price: {
+            pricingMonthly: 12,
+            pricingYearly: 120
+        },
         yearlyInfo: '2 months free'
-    },
-    {
+    }, {
         name: 'Pro',
         img: proImage,
-        pricingMonthly: 15,
-        pricingYearly: 150,
+        price: {
+            pricingMonthly: 15,
+            pricingYearly: 150
+        },
         yearlyInfo: '2 months free'
     }
 ]
