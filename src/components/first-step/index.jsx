@@ -4,11 +4,11 @@ import Heading from '../heading/heading'
 import NavigationButtons from '../navigation-buttons/navigationButtons'
 
 
-function FirstStep(props) {
+function FirstStep() {
     return (
         <div>
             <Heading title='Personal info' subtitle='Please provide your name, email address, and phone number.'/>
-            <form onSubmit={''} className='firstForm'>
+            <form className='firstForm'>
                 <div className='inputField'>
                     <label htmlFor="name" className='text-style-body-medium label-color'>Name:</label>
                     <input

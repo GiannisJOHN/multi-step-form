@@ -1,6 +1,7 @@
 import Sidebar from "../../components/sidebar"
 import FirstStep from "../../components/first-step"
 import SecondStep from "../../components/second-step"
+import ThirdStep from "../../components/third-step";
 import { useSelector } from 'react-redux';
 
 
@@ -16,7 +17,7 @@ function App() {
       case 2:
         return <SecondStep />
       case 3:
-        return 'third step'
+        return <ThirdStep />
       case 4:
         return 'fourth step'
     }
