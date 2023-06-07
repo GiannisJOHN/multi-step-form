@@ -3,10 +3,12 @@ import FirstStep from "../../components/first-step"
 import SecondStep from "../../components/second-step"
 import ThirdStep from "../../components/third-step";
 import { useSelector } from 'react-redux';
+import FourthStep from "../../components/fourth-step";
 
 
 function App() {
-  let stateStep = useSelector((state) => { return state.step})
+
+  let stateStep = useSelector((state) => {return state.step})
 
   
   
@@ -19,7 +21,7 @@ function App() {
       case 3:
         return <ThirdStep />
       case 4:
-        return 'fourth step'
+        return <FourthStep />
     }
   }
 

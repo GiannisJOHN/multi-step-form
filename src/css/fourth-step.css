@@ -1,0 +1,43 @@
+
+.summaryContainer {
+    width: 100%;
+    max-width: 450px;
+    min-height: 100px;
+    background-color: var(--color-very-light-grey);
+    border-radius: 8px;
+    padding: 16px 24px;
+}
+
+.summaryPlanInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-denim);
+}
+
+.summaryAddOn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-denim);
+}
+
+.summaryAddOnText {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.summaryPlanText {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+hr {
+    background-color: var(--color-grey);
+    border: none;
+    height: 1px;
+    opacity: 0.2;
+    margin: 24px 0 16px 0;
+}
