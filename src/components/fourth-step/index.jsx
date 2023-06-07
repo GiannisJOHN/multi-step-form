@@ -7,13 +7,17 @@ function priceFormat(num, mode, addon) {
     let plan = mode === 'monthly' ? 'mo' : 'yr'
     let plus = addon === true ? '+' : ''
     let value = `${plus}$${num}/${plan}`
+
+    return value
 }
 
 function FourthStep() {
+
     let finalState = useSelector((state) => {return state.final})
+    let mode = finalState.payment.mode  
     let plan = {
         name: `${finalState.plan.name} (${finalState.payment.mode})` ,
-        pricing: finalState.payment.mode === 'monthly' ? finalState.plan.price.pricingMonthly : finalState.plan.price.pricingYearly
+        pricing: priceFormat(finalState.plan.price[mode], mode)
     }
 
     function generateAddons(array) {
@@ -23,9 +27,11 @@ function FourthStep() {
                 return each
             }
         }).map((each) => {
+
             return (
                 <div className='summaryAddOn'>
-                    <h2 className='summaryAddOnText'>{each.title}</h2><h2 className='summaryAddOnText'>{each.pricing.monthly}</h2>
+                    <h2 className='summaryAddOnText'>{each.title}</h2><h2 className='summaryAddOnText'>{
+                    priceFormat(each.pricing[mode], mode, true)}</h2>
                 </div>
             )
         })

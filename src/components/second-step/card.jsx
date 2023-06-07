@@ -20,7 +20,7 @@ function Card(props) {
       let activeCard = activeState.plan.name === props.name ?
       'plan-card plan-card-selected' : 'plan-card'
       
-      let price = activeState.payment.mode === 'monthly' ? '$' + props.pricing.pricingMonthly + '/mo' : '$' + props.pricing.pricingYearly + '/yr'
+      let price = activeState.payment.mode === 'monthly' ? '$' + props.pricing.monthly + '/mo' : '$' + props.pricing.yearly + '/yr'
       
       let yearInfo = activeState.payment.mode === 'monthly' ? '' : '2 months free'
 

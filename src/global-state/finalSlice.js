@@ -4,8 +4,8 @@ const initialState = {
   plan: {
     name: 'Arcade',
     price: {
-      pricingMonthly: 9,
-      pricingYearly: 90
+      monthly: 9,
+      yearly: 90
   },
   },
   payment: {
