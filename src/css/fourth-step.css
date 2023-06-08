@@ -5,6 +5,9 @@
     min-height: 100px;
     background-color: var(--color-very-light-grey);
     border-radius: 8px;
+}
+
+.summary-padding {
     padding: 16px 24px;
 }
 
@@ -15,14 +18,14 @@
     color: var(--color-denim);
 }
 
-.summaryAddOn {
+.summarySecondary {
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--color-denim);
 }
 
-.summaryAddOnText {
+.summarySecondaryText {
     font-weight: 500;
     font-size: 14px;
     line-height: 26px;
