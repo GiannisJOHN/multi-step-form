@@ -36,6 +36,28 @@ function FourthStep() {
             )
         })
     }
+    function addonsPrices(array) {
+        return array.filter((each) => {
+            if (each.checked === true) {
+                return each
+            }
+        }).map((each) => {
+
+            return (each.pricing[mode])
+        })
+    }
+
+    function sum(planPrice, addonsArray) {
+        let sum = planPrice
+        if (addonsArray.length > 0) {
+            for (let i = 0; i < addonsArray.length; i++) {
+                sum += addonsArray[i]
+            }
+            return sum
+        } else {
+            return sum
+        }
+    }
 
     return (
         <div>
@@ -47,6 +69,12 @@ function FourthStep() {
                 </div>
                 <hr />
                 {generateAddons(finalState.addOns)}
+            </div>
+            <div className='summaryAddOn'>
+                <h2 className='summaryAddOnText'>Summary</h2><h2 className='summaryAddOnText'>
+                {
+                    sum(finalState.plan.price[mode], addonsPrices(finalState.addOns))
+                }</h2>
             </div>
 
             <NavigationButtons />
