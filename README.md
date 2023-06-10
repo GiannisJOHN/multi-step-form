@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Multi-Step Form
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Multi-Step Form is a small project created to showcase my skills as a frontend developer. It is designed to demonstrate my proficiency in building user-friendly and interactive forms using React.js, Redux Toolkit, CSS3, and Jest for testing.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Live Demo
 
-### `yarn start`
+You can access the live demo of the Multi-Step Form by clicking here:
+https://form-ioannis.netlify.app/
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `yarn test`
+The Multi-Step Form project utilizes the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js:** The project is built using React.js, a popular JavaScript library for building user interfaces. It provides a component-based approach, allowing for modular and reusable code.
 
-### `yarn build`
+- **Create React App:** Create React App is a boilerplate tool that sets up a React.js project with a predefined folder structure and build configuration. It simplifies the setup process and allows for a quick start.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Redux Toolkit:** Redux Toolkit is a library that simplifies the management of application state in React.js applications. It provides utilities and abstractions that reduce the amount of boilerplate code needed to configure and use Redux.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **CSS3:** The project utilizes plain CSS3 for styling and creating a visually appealing user interface.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Jest:** Jest is a popular JavaScript testing framework used for unit testing. It is easy to set up and provides a wide range of testing utilities, making it suitable for testing React components and Redux actions.
 
-### `yarn eject`
+## Features
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Multi-Step Form project includes the following features:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Multi-Step Form:** The form is divided into multiple steps, allowing users to navigate through each step and provide their information in a structured manner.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **State Management:** Redux Toolkit is used for managing the application state. It provides a centralized store to manage form data and facilitates seamless communication between components.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Responsive Design:** The form is designed to be responsive, adapting to different screen sizes and devices. CSS3 is used to create a visually appealing layout that remains user-friendly across various devices.
 
-## Learn More
+- **Unit Testing:** The project includes unit tests written with Jest. These tests ensure the reliability and stability of the codebase, allowing for easier maintenance and refactoring in the future.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Getting Started
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the Multi-Step Form project locally, follow these steps:
 
-### Code Splitting
+1. Clone the repository: `git clone <repository-url>`
+2. Navigate to the project directory: `cd multi-step-form`
+3. Install the dependencies: `npm install`
+4. Start the development server: `npm start`
+5. Open your browser and access the form at `http://localhost:3000`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+This will run the Jest test runner and display the test results in the terminal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Conclusion
 
-### Making a Progressive Web App
+The Multi-Step Form project demonstrates my skills as a frontend developer, showcasing my proficiency in React.js, Redux Toolkit, CSS3, and Jest testing. The form's multi-step nature, form validation, state management, and responsive design highlight my ability to create user-friendly and visually appealing web applications.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Connect with Me
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to connect with me on LinkedIn for further discussions and collaborations. You can find my LinkedIn profile [here](https://www.linkedin.com/in/ioannis-mentesidis/).
