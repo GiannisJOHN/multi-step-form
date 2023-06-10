@@ -1,5 +1,5 @@
 
-import React, {useState} from 'react'
+import React from 'react'
 import Heading from '../heading/heading'
 import NavigationButtons from '../navigation-buttons/navigationButtons'
 import { validate } from '../../global-state/validSlice'
