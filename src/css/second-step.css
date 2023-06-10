@@ -99,3 +99,18 @@
   .goRight {
     transform: translateX(calc(38px - 8px - 12px));
   }
+
+  @media (max-width: 500px) {
+    .plan-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .plan-card {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        gap: 14px;
+    }
+    
+  }

@@ -54,11 +54,16 @@
         display: flex;
         justify-content: center;
         z-index: 1;
+        padding: 40px 0 0 0;
+        gap: 14px;
     }
     .ovals {
         position: relative;
         width: 850px;
         top: -220px;
         z-index: 0;
+    }
+    .step-rounded {
+        margin-right: 0;
     }
 }

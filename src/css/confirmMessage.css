@@ -1,0 +1,13 @@
+.confirm-container {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.confirm-container-p-color {
+    color: var(--color-grey);
+}

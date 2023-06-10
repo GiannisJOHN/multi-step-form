@@ -20,6 +20,8 @@ function NavigationButtons() {
     ? 'back-button-off'
     : ''
 
+    let classButton =   step === 4 ? 'next-button confirm-bg-color' : 'next-button'
+
     return (
         <div className='navigation-buttons-container'>
             <button className={`back-button ${display}`} onClick={() => {
@@ -31,12 +33,12 @@ function NavigationButtons() {
                 Go Back
             </button>
 
-            <button className='next-button' type='submit' onClick={() => {
+            <button className={classButton} type='submit' onClick={() => {
                     if(valid === true) {
                         dispatch(nextStep())
                     }
             }}>
-                Next Step
+                {step === 4 ? 'Confirm' : 'Next Step'}
             </button>
         </div>
     )

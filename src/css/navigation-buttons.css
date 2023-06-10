@@ -18,6 +18,10 @@
     cursor: pointer;
 }
 
+.confirm-bg-color {
+    background-color: var(--color-purple);
+}
+
 .back-button {
     border: none;
     background-color: transparent;

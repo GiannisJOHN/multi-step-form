@@ -48,3 +48,11 @@
     font-weight: 400;
     color: var(--color-purple);
 }
+
+@media (max-width: 530px) {
+    .checkbox-container {
+        padding: 10px 15px;
+        gap: 15px;
+        height: auto;
+    }
+}

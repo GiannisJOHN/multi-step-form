@@ -5,7 +5,7 @@ const stepSlice = createSlice({
   initialState: 1,
   reducers: {
     nextStep: (state, action) => {
-        if (state < 4) {
+        if (state < 5) {
             return state + 1
           }
           return state
