@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux'
 
 function generateClassForRounded(state, reactProp) {
     if (state === reactProp) {

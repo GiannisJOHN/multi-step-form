@@ -5,9 +5,11 @@ export function filterAddons(array, mode) {
     }
 
     let filtered = array.filter((each) => {
+        let returnValue
         if (each.checked === true) {
-            return each
+            returnValue = each
         }
+        return returnValue
     })
 
     value.array = filtered.map((each) => {
