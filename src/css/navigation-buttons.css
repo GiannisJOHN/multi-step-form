@@ -26,6 +26,10 @@
     cursor: pointer;
 }
 
+.back-button-off {
+    display: none;
+}
+
 .back-button:hover {
     color: var(--color-denim);
 }

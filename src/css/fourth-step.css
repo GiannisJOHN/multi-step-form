@@ -37,6 +37,11 @@
     line-height: 18px;
 }
 
+.final-price-color {
+    color: var(--color-purple);
+    font-weight: 700;
+}
+
 hr {
     background-color: var(--color-grey);
     border: none;

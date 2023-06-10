@@ -41,7 +41,7 @@ function FourthStep() {
             </div>
             <div className='summarySecondary summary-padding'>
                 <h2 className='summarySecondaryText'>{`Total (${mode})`}</h2>
-                <h2 className='summarySecondaryText'>{
+                <h2 className='summarySecondaryText final-price-color'>{
                     priceFormat(
                         sum(finalState.plan.price[mode], filterAddons(finalState.addOns, mode).price),
                         mode
