@@ -19,7 +19,7 @@ const initialState = {
             monthly: 1,
             yearly: 10
         },
-        checked: true
+        checked: false
     },
     {
         title: 'Larger storage',
