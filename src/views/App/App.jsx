@@ -25,6 +25,8 @@ function App() {
         return <FourthStep />
       case 5:
         return <ConfirmMessage />
+      default:
+        return <FirstStep />;
     }
   }
 
